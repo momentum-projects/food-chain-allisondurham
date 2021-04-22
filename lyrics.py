@@ -3,6 +3,7 @@
 
 
 key = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
+# key not actually being used anywhere
 
 dict_second_line = {
     "spider" : "It wriggled and jiggled and tickled inside her.",
