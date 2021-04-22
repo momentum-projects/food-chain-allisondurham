@@ -3,6 +3,8 @@
 
 
 # list not actually being used anywhere
+# might try to use to create loop for stanza function 
+# but would likely have to rework dictionary entries and exceptional phrases at intro and finish
 things_she_ate = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
 
 # dictionary for second line of each phrase
@@ -86,6 +88,6 @@ def recite_poem():
 
 ############################################################################
 
-# calling this function makes everything run
+# calling this function makes everything
 recite_poem()
 
