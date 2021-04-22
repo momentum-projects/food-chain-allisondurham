@@ -24,7 +24,9 @@ dict_verse = {
     "horse" : "I know an old lady who swallowed a horse. She's dead of course!"
 }
 
+verse = []
 
+##############################################################################
 
 def first_line(animal):
     print("I know an old lady who swallowed a " + animal + ".")
@@ -37,22 +39,32 @@ def format(listed_verses):
         print(dict_verse[animal])
     print("")
 
+#################################
+
+def setup():
+    print("")
+    print("")
+    print("")
+
+def intro(animal):
+    verse.insert(0,animal)
+    format(verse)
+
 def stanza(animal):
     first_line(animal)
     second_line(animal)
     verse.insert(0,animal)
     format(verse)
 
+def finish(animal):
+    print(dict_verse[animal])
 
 
-##########
-print("")
-print("")
-print("")
-verse = []
-verse.insert(0,"fly")
-format(verse)
- 
+############################################
+
+
+setup()
+intro("fly")
 
 stanza("spider")
 stanza("bird")
@@ -61,35 +73,8 @@ stanza("dog")
 stanza("goat")
 stanza("cow")
 
+finish("horse")
 
-# first_line("spider")
-# second_line("spider")
-# verse.insert(0,"spider")
-# format(verse)
 
-# first_line("bird")
-# second_line("bird")
-# verse.insert(0,"bird")
-# format(verse)
 
-# first_line("cat")
-# second_line("cat")
-# verse.insert(0,"cat")
-# format(verse)
 
-# first_line("dog")
-# second_line("dog")
-# verse.insert(0,"dog")
-# format(verse)
-
-# first_line("goat")
-# second_line("goat")
-# verse.insert(0,"goat")
-# format(verse)
-
-# first_line("cow")
-# second_line("cow")
-# verse.insert(0,"cow")
-# format(verse)
-
-# print(dict_verse["horse"])
