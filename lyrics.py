@@ -88,6 +88,6 @@ def recite_poem():
 
 ############################################################################
 
-# calling this function makes everything
+# calling this function makes the magic happen
 recite_poem()
 
