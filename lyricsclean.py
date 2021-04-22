@@ -33,7 +33,10 @@ def first_line(animal):
 def second_line(animal):
     print(dict_second_line[animal])
 
-def format(listed_verses):
+def add_repeating(animal):
+    verse.insert(0,animal)
+
+def assemble(listed_verses):
     for animal in listed_verses:
         print(dict_verse[animal])
     print("")
@@ -46,14 +49,14 @@ def setup():
     print("")
 
 def intro(animal):
-    verse.insert(0,animal)
-    format(verse)
+    add_repeating(animal)
+    assemble(verse)
 
 def stanza(animal):
     first_line(animal)
     second_line(animal)
-    verse.insert(0,animal)
-    format(verse)
+    add_repeating(animal)
+    assemble(verse)
 
 def finish(animal):
     print(dict_verse[animal])
