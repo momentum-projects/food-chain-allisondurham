@@ -16,30 +16,33 @@ goat = "She swallowed the goat to catch the dog."
 cow = "She swallowed the cow to catch the goat."
 horse = "I know an old lady who swallowed a horse. She's dead of course!"
 
-#def verse(fly, spider, bird, cat, dog, goat, cow, horse):
-    # print(fly)
-    # print("")
-    # print(spider)
-
-
-verse = []
-
+def intro(animal):
+    print("I know an old lady who swallowed a " + animal + ".")
+    
 def format(verse):
     print("")
     for line in verse:
         print(line)
 
-verse.insert(0,fly)
-format(verse)
-verse.insert(0,spider)
-format(verse)
-verse.insert(0,cat)
-format(verse)
-verse.insert(0,dog)
-format(verse)
-verse.insert(0,goat)
-format(verse)
-verse.insert(0,cow)
+
+intro('spider')
+# => I know an uld lady who swallowed a spider.
+
+
+##########
+# verse = []
+# verse.insert(0,fly)
+# format(verse)
+# verse.insert(0,spider)
+# format(verse)
+# verse.insert(0,cat)
+# format(verse)
+# verse.insert(0,dog)
+# format(verse)
+# verse.insert(0,goat)
+# format(verse)
+# verse.insert(0,cow)
+
 
 
 
