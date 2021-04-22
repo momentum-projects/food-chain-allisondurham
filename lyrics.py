@@ -42,10 +42,14 @@ def second_line(animal):
     print(dict_second_line[animal])
 
 # print  list of accumulated verses and a blank line
-def format(listed_verses):
+def assemble(listed_verses):
     for animal in listed_verses:
         print(dict_verse[animal])
     print("")
+
+# adds new animal verse to beginning of repeating animal verse list      new empty list defined  in section with dictionaries
+def add_repeating(animal):
+    verse.insert(0,animal)
 
 #################################
 
@@ -58,16 +62,16 @@ def setup():
 # adds first animal to front of empty new list and prints it     
 # this phrase gets special treatment because first is different
 def intro(animal):
-    verse.insert(0,animal)
-    format(verse)
+    add_repeating(animal)
+    assemble(verse)
 
 # prints phrases that follow a repeatable pattern    call with  "string" that is same as corresponding dictionary keys
 # first line, print second line, adds relevant line to repeating verse list, print repeating verses list
 def stanza(animal):
     first_line(animal)
     second_line(animal)
-    verse.insert(0,animal)
-    format(verse)
+    add_repeating(animal)
+    assemble(verse)
 
 # prints last phrase     because its different      call with key from dict_verse
 def finish(animal):
