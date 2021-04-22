@@ -16,16 +16,36 @@ goat = "She swallowed the goat to catch the dog."
 cow = "She swallowed the cow to catch the goat."
 horse = "I know an old lady who swallowed a horse. She's dead of course!"
 
-def verse(fly, spider, bird, cat, dog, goat, cow, horse):
-    print(fly)
+#def verse(fly, spider, bird, cat, dog, goat, cow, horse):
+    # print(fly)
+    # print("")
+    # print(spider)
 
-verse(fly, spider, bird, cat, dog, goat, cow, horse)
+
+verse = []
+
+verse.insert(0,fly)
+print(verse)
+verse.insert(0,spider)
+print(verse)
 
 
+
+
+
+#verse(fly, spider, bird, cat, dog, goat, cow, horse)
+
+#print (fly)
+# lyric = (
+#     f"{fly}"
+#     f"{spider}"
+#     f"{bird}"
+# )
+# print(lyric)
 
 # f"{fly} {spider} {bird}"
 
-# repeated = {"fly" : "I dont know why she swallowed the fly.  Perhaps she'll die.", "spider" : "She swallowed the spider to catch the fly.", "bird" : "She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.", "cat" : "She swallowed the cat to catch the bird.", "dog" : "She swallowed the dog to catch the cat.", "goat" : "She swallowed the goat to catch the dog.", "cow" : "She swallowed the cow to catch the goat."}
+#repeated = {"fly" : "I dont know why she swallowed the fly.  Perhaps she'll die.", "spider" : "She swallowed the spider to catch the fly.", "bird" : "She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.", "cat" : "She swallowed the cat to catch the bird.", "dog" : "She swallowed the dog to catch the cat.", "goat" : "She swallowed the goat to catch the dog.", "cow" : "She swallowed the cow to catch the goat."}
 # "hello, {fly} {spider} {bird}".format(**repeated)
 
 # i know an old lady who swallowed a (variable).
