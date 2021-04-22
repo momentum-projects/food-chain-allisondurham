@@ -2,7 +2,7 @@
 
 
 
-key_first_line = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
+key = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
 
 dict_second_line = {
     "spider" : "It wriggled and jiggled and tickled inside her.",
@@ -37,12 +37,11 @@ def format(listed_verses):
         print(dict_verse[animal])
     print("")
 
-
-# def stanza(key_first_line):
-#     first_line(animal)
-#     second_line(animal)
-#     verse.insert(0,animal)
-#     format(verse)
+def stanza(animal):
+    first_line(animal)
+    second_line(animal)
+    verse.insert(0,animal)
+    format(verse)
 
 
 
@@ -53,37 +52,44 @@ print("")
 verse = []
 verse.insert(0,"fly")
 format(verse)
+ 
 
-# stanza("spider")
+stanza("spider")
+stanza("bird")
+stanza("cat")
+stanza("dog")
+stanza("goat")
+stanza("cow")
 
-first_line("spider")
-second_line("spider")
-verse.insert(0,"spider")
-format(verse)
 
-first_line("bird")
-second_line("bird")
-verse.insert(0,"bird")
-format(verse)
+# first_line("spider")
+# second_line("spider")
+# verse.insert(0,"spider")
+# format(verse)
 
-first_line("cat")
-second_line("cat")
-verse.insert(0,"cat")
-format(verse)
+# first_line("bird")
+# second_line("bird")
+# verse.insert(0,"bird")
+# format(verse)
 
-first_line("dog")
-second_line("dog")
-verse.insert(0,"dog")
-format(verse)
+# first_line("cat")
+# second_line("cat")
+# verse.insert(0,"cat")
+# format(verse)
 
-first_line("goat")
-second_line("goat")
-verse.insert(0,"goat")
-format(verse)
+# first_line("dog")
+# second_line("dog")
+# verse.insert(0,"dog")
+# format(verse)
 
-first_line("cow")
-second_line("cow")
-verse.insert(0,"cow")
-format(verse)
+# first_line("goat")
+# second_line("goat")
+# verse.insert(0,"goat")
+# format(verse)
 
-print(dict_verse["horse"])
+# first_line("cow")
+# second_line("cow")
+# verse.insert(0,"cow")
+# format(verse)
+
+# print(dict_verse["horse"])
