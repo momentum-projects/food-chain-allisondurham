@@ -24,11 +24,22 @@ horse = "I know an old lady who swallowed a horse. She's dead of course!"
 
 verse = []
 
-verse.insert(0,fly)
-print(verse)
-verse.insert(0,spider)
-print(verse)
+def format(verse):
+    print("")
+    for line in verse:
+        print(line)
 
+verse.insert(0,fly)
+format(verse)
+verse.insert(0,spider)
+format(verse)
+verse.insert(0,cat)
+format(verse)
+verse.insert(0,dog)
+format(verse)
+verse.insert(0,goat)
+format(verse)
+verse.insert(0,cow)
 
 
 
