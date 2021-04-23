@@ -23,6 +23,7 @@ dict_verse = {
 }
 
 verse = []
+animals = ["spider", "bird", "cat", "dog", "goat", "cow"]
 
 ##############################################################################
 
@@ -58,6 +59,10 @@ def stanza(animal):
     add_repeating(animal)
     assemble(verse)
 
+def phrase(animal):
+    for animal in animals:
+        stanza(animal)
+
 def finish(animal):
     print(dict_verse[animal])
 
@@ -66,12 +71,7 @@ def finish(animal):
 def recite_poem():
     setup()
     intro("fly")
-    stanza("spider")
-    stanza("bird")
-    stanza("cat")
-    stanza("dog")
-    stanza("goat")
-    stanza("cow")
+    phrase(animals)
     finish("horse")
 
 ################################################################################
